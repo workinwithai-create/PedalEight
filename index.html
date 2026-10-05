@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PedalEight — eight-bar pedal point</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <p class="mark">Workin' With AI · finish the section</p>
+    <h1>PedalEight</h1>
+    <p class="lede">Eight bars where the bass and cello hold one note and the chords move above it. The loop stops changing with every chair. The section finally has gravity.</p>
+  </header>
+  <main>
+    <section class="panel" id="gate">
+      <button type="button" id="tap">Tap to start audio</button>
+      <p id="status">Samples have not loaded.</p>
+      <p class="ios">iOS silent switch mutes Web Audio. This desk is not a keyboard instrument — hardware MIDI is not required.</p>
+    </section>
+    <section class="panel">
+      <div class="row">
+        <label>BPM <input id="bpm" type="number" min="60" max="180" value="92" /></label>
+        <label>Key
+          <select id="key">
+            <option>A minor</option><option>C major</option><option>D minor</option>
+            <option>E minor</option><option>G major</option><option>F major</option>
+            <option>Bb major</option><option>B minor</option>
+          </select>
+        </label>
+        <label>Bars <input id="bars" type="number" min="4" max="16" value="8" /></label>
+      </div>
+      <label class="block">Four chords <input id="chords" type="text" value="Am F C G" /></label>
+      <div class="sides">
+        <button type="button" id="sideA">A · moving print</button>
+        <button type="button" id="sideB" class="on">B · pedal</button>
+      </div>
+      <div id="recipes" class="recipes"></div>
+      <p id="blurb"></p>
+      <div id="barsView" class="bars"></div>
+      <div class="mutes" id="mutes"></div>
+      <div class="row">
+        <button type="button" id="play">Play</button>
+        <button type="button" id="stop">Stop</button>
+        <button type="button" id="wav">Export loop WAV</button>
+        <button type="button" id="tail">Export with tail</button>
+        <button type="button" id="mid">Export MIDI</button>
+      </div>
+      <pre id="punch"></pre>
+    </section>
+  </main>
+  <footer>
+    <p>Free in this repo. Sell once at $19 on Lemon Squeezy if you list it — do not subscribe a pedal. FluidR3 samples pinned to commit SHAs. Audio stays in the tab.</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

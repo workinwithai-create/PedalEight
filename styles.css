@@ -1,0 +1,23 @@
+:root { color-scheme: dark; --ink: #e8efe6; --dim: #9aa898; --line: #2c3a30; --hold: #c6f27a; --move: #7eb6ff; }
+* { box-sizing: border-box; }
+body { margin: 0; font: 16px/1.45 "Iowan Old Style", Palatino, Georgia, serif; background: #121612; color: var(--ink); }
+header, main, footer { max-width: 880px; margin: 0 auto; padding: 1.2rem; }
+.mark { letter-spacing: 0.14em; text-transform: uppercase; font: 12px/1.2 ui-sans-serif, system-ui, sans-serif; color: var(--hold); }
+h1 { font-weight: 500; margin: 0.2rem 0; }
+.lede { color: var(--dim); max-width: 62ch; }
+.panel { border: 1px solid var(--line); padding: 1rem; margin-bottom: 1rem; }
+.row, .sides, .mutes, .recipes { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.6rem 0; }
+label { font: 13px/1.2 ui-sans-serif, system-ui, sans-serif; color: var(--dim); display: flex; flex-direction: column; gap: 0.25rem; }
+.block { display: flex; }
+input, select, button { font: 15px/1.2 ui-sans-serif, system-ui, sans-serif; background: #1b211c; color: var(--ink); border: 1px solid var(--line); padding: 0.45rem 0.6rem; }
+button { cursor: pointer; }
+button.on { border-color: var(--hold); color: var(--hold); }
+#tap { background: var(--hold); color: #14200c; border: 0; font-weight: 600; }
+.bars { display: grid; gap: 4px; margin: 0.8rem 0; }
+.bar { border: 1px solid var(--line); padding: 0.4rem; min-height: 3.2rem; font: 12px/1.2 ui-sans-serif, system-ui, sans-serif; }
+.bar b { display: block; color: var(--dim); }
+.bar.hold { background: #1c2814; }
+.bar.now { outline: 2px solid var(--hold); }
+#punch { white-space: pre-wrap; color: var(--dim); font: 13px/1.4 ui-monospace, monospace; }
+.ios, footer { color: var(--dim); font-size: 13px; }
+#status { min-height: 1.4em; }
